@@ -28,6 +28,8 @@ DEBUG = env.bool("DEBUG", False)
 
 
 # Application definition
+# TODO: Why did you delete ALLOWED_HOSTS?
+ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -85,7 +87,6 @@ DATABASES = {
         'PORT': '5432'
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
